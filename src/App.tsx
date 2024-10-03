@@ -7,8 +7,13 @@ import Title from "./components/Title.tsx";
 
 const ParentDiv = styled.div`
   width: 80vw;
-  margin: auto;
-  border: 5px #d74894 solid;
+  margin: 0 10%;
+  border: 5px seagreen solid;
+  align-items: center;
+`;
+const ElderDiv = styled.div`
+  background-color: deepskyblue;
+  width: 130%;
 `;
 
 export default function App() {
@@ -26,9 +31,11 @@ export default function App() {
       .catch((e: Error) => console.log("Data fetch unsuccessful " + e));
   }, [data.length]);
   return (
-    <ParentDiv>
-      <Title></Title>
-      <Amiibo data={data} />
-    </ParentDiv>
+    <ElderDiv>
+      <ParentDiv>
+        <Title></Title>
+        <Amiibo data={data} />
+      </ParentDiv>
+    </ElderDiv>
   );
 }

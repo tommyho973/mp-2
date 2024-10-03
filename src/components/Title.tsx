@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 const StyledDiv = styled.div`
   align-items: center;
-  background-color: #f7daea;
+  background-color: crimson;
+  border: solid lemonchiffon 5px;
 `;
 const StyledH1 = styled.h1`
   font-weight: bold;
   text-align: center;
-  color: #ff0000;
+  color: white;
 `;
 export default function Title() {
   return (

@@ -5,7 +5,7 @@ const AllCharsDiv = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  background-color: #f7daea;
+  background-color: lemonchiffon;
 `;
 
 const SingleCharDiv = styled.div<{ type: string }>`
