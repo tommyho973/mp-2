@@ -1,0 +1,20 @@
+import styled from "styled-components";
+
+const StyledDiv = styled.div`
+  align-items: center;
+  background-color: #f7daea;
+`;
+const StyledH1 = styled.h1`
+  font-weight: bold;
+  text-align: center;
+  color: #ff0000;
+`;
+export default function Title() {
+  return (
+    <>
+      <StyledDiv>
+        <StyledH1>Mario Amiibos</StyledH1>
+      </StyledDiv>
+    </>
+  );
+}

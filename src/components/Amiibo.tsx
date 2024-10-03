@@ -15,9 +15,18 @@ const SingleCharDiv = styled.div<{ type: string }>`
   max-width: 30%;
   padding: 2%;
   margin: 1%;
-  background-color: ${(props) => (props.type === "Kirby" ? "pink" : "black")};
-  color: ${(props) => (props.type !== "Kirby" ? "white" : "black")};
-  border: 3px darkred solid;
+  background-color: ${(props) =>
+    props.type === "Peach" ||
+    props.type === "Daisy" ||
+    props.type === "Rosalina"
+      ? "pink"
+      : "cyan"};
+  color: ${(props) =>
+    props.type != "Peach" && props.type != "Daisy" && props.type != "Rosalina"
+      ? "black"
+      : "white"};
+  border: 3px white solid;
+  border-radius: 25px;
   font: italic small-caps bold calc(2px + 1vw) Papyrus, fantasy;
   text-align: center;
 `;

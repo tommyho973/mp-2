@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { AmiiboChar } from "./interfaces/AmiiboChar.ts";
 import { AmiiboApiResponse } from "./interfaces/AmiiboApiResponse.ts";
+import Title from "./components/Title.tsx";
 
 const ParentDiv = styled.div`
   width: 80vw;
@@ -26,6 +27,7 @@ export default function App() {
   }, [data.length]);
   return (
     <ParentDiv>
+      <Title></Title>
       <Amiibo data={data} />
     </ParentDiv>
   );
